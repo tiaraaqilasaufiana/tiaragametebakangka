@@ -1,6 +1,8 @@
 <?php
      
      echo "<p>Game Tebak Angka</p>";
+     echo "Masukkan angka dari 1 sampai 5<br>";
+     
      $x = rand(1,5);
     // echo "$x<br>";
 
