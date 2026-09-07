@@ -2,7 +2,8 @@
      
      echo "<h2>Game Tebak Angka</h2>";
      echo "Level: 1<br>";
-     echo "Masukkan angka dari 1 sampai 50<br><br>";
+     echo "Masukkan angka dari 1 sampai 50<br>";
+     echo "Kesempatan: 3 kali<br><br>";
      
      $x = rand(1,50);
     // echo "$x<br>";
