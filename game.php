@@ -1,4 +1,3 @@
-
 <?php
      
      echo "<p>Game Tebak Angka</p>";
@@ -25,7 +24,6 @@
         }
 ?>
 <form method="post">
-    <input type="number" name="tebak">
+    <input type="number" name="tebak" min="1" max="5">
     <button>Tebak</button>
 </form>
-
