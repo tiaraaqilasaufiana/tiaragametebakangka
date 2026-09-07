@@ -26,6 +26,6 @@
         }
 ?>
 <form method="post">
-    <input type="number" name="tebak" min="1" max="5">
+    <input type="number" name="tebak" min="1" max="5" required>
     <button>Tebak</button>
 </form>
