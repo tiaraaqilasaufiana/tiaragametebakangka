@@ -26,6 +26,6 @@
         }
 ?>
 <form method="post">
-    <input type="number" name="tebak" min="1" max="5" required>
+    <input type="number" name="tebak" min="1" max="5" required placeholder="Masukkan angka">
     <button>Tebak</button>
 </form>
