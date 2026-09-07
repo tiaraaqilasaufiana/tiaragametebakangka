@@ -1,15 +1,15 @@
 <?php
      
-     echo "<p>Game Tebak Angka</p>";
-     echo "Masukkan angka dari 1 sampai 5<br>";
+     echo "<h2>Game Tebak Angka</h2>";
+     echo "Masukkan angka dari 1 sampai 50<br><br>";
      
-     $x = rand(1,5);
+     $x = rand(1,50);
     // echo "$x<br>";
 
      if (isset($_POST['tebak']))
         {
             $tebakan = $_POST['tebak'];
-            echo "$tebakan<br>";
+            echo "Current Number: $tebakan<br><br>";
 
              if ($_POST['tebak'] == $x)
                 {
@@ -17,15 +17,15 @@
                 } 
                 elseif ($_POST['tebak'] < $x)
                 {
-                   echo "Tebakan hampir benar!";
+                   echo "Tebakan terlalu rendah!";
                 }
                 else
                 {
-                   echo "Tebakan terlalu jauh!";
+                   echo "Tebakan terlalu tinggi!";
                 }
         }
 ?>
 <form method="post">
-    <input type="number" name="tebak" min="1" max="5" required placeholder="Masukkan angka">
+    <input type="number" name="tebak" min="1" max="50" required placeholder="Masukkan angka">
     <button>Tebak</button>
 </form>
